@@ -5,22 +5,27 @@
 }
 body {
     height: 100vh;
-    background: #1f1f1f;
-    background-size: 45px 45px;
-    background-image: linear-gradient(to right, #293a50 1px, transparent 1px),
-    linear-gradient(to bottom, #293a50 1px, transparent 1px);
+    background: url("/textures/stars.jpg");
 }
 .sun {
     width: 100px;
     height: 100px;
-    background: radial-gradient(#f09819, #ff512f);
+    background: radial-gradient(circle at 30% 30%, #fff 0%, #ffeb3b 30%, #ff9800 70%, transparent 100%), url("/textures/sun.jpg");
+    background-size: cover;
+    background-blend-mode: overlay;
+    box-shadow: 
+        inset -10px -10px 20px rgba(0,0,0,0.3),   /* inner crater-like shading */
+        0 0 10px #ffeb3b,                        /* soft corona */
+        0 0 50px #ff9800,                        /* mid glow */
+        0 0 90px #ff5722,                       /* outer flare */
+        0 0 130px rgba(255, 100, 0, 0.6);        /* diffuse light */
     border-radius: 50%;
-    box-shadow: -4px 2px 56px orange;
     position:absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);    
 }
+    
 .mercury_orbit {
     width: 150px;
     height: 150px;
@@ -29,7 +34,11 @@ body {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background: rgb(155, 88, 0);
+    background: radial-gradient(circle at 30% 30%, #fff4 0%, transparent 50%), url("/textures/mercury.jpg");
+    background-size: cover;
+    box-shadow: 
+        inset -4px -4px 8px rgba(0,0,0,0.4),
+        0 0 8px rgba(255,200,100,0.5);
     position: absolute;
     top: 44%;
     left: 44%;
@@ -69,7 +78,11 @@ body {
 .venus_planet{
     width: 29px;
     height: 29px;
-    background: rgb(134, 173, 134);
+    background: radial-gradient(circle at 30% 30%, #fff8 0%, transparent 50%), url("/textures/venus.jpg");
+    background-size: cover;
+    box-shadow: 
+        inset -5px -5px 10px rgba(0,0,0,0.3),
+        0 0 12px rgba(255,230,150,0.6);
     border-radius: 50%;
     position: absolute;
     top: 43%;
@@ -95,7 +108,11 @@ body {
 .earth_planet {
     width: 34px;
     height: 34px;
-    background: rgb(0, 217, 255);
+    background: radial-gradient(circle at 30% 30%, #fff 0%, transparent 50%), url("/textures/earth.jpg");
+    background-size: cover;
+    box-shadow: 
+        inset -4px -4px 8px rgba(0,0,0,0.4),
+        0 0 10px rgba(68, 255, 255, 0.5);
     position: absolute;
     border-radius: 50%;
     top: 44%;
@@ -121,7 +138,11 @@ body {
 .mars_planet {
     width: 23px;
     height: 23px;
-    background: red;
+    background: radial-gradient(circle at 30% 30%, #ff9a6a22 0%, transparent 50%), url("/textures/mars.jpg");
+    background-size: cover;
+    box-shadow: 
+        inset -4px -4px 8px rgba(0,0,0,0.4),
+        0 0 10px rgba(220,80,40,0.5);
     position: absolute;
     border-radius: 50%;
     top: 47%;
@@ -147,7 +168,11 @@ body {
 .jupiter_planet {
     width: 48px;
     height: 48px;
-    background: rgb(110, 83, 32);
+    background: radial-gradient(circle at 35% 35%, #ffd4b3 0%, transparent 50%), url("textures/jupiter.jpg");
+    background-size: cover;
+    box-shadow: 
+        inset -8px -8px 16px rgba(0,0,0,0.3),
+        0 0 20px rgba(255,180,100,0.4);
     border-radius: 50%;
     position: absolute;
     top: 46%;
@@ -173,7 +198,11 @@ body {
 .saturn_planet {
     height: 43px;
     width: 43px;
-    background: yellow;
+    background: radial-gradient(circle at 35% 35%, #fff9 0%, transparent 50%), url("/textures/saturn.jpg");
+    background-size: cover;
+    box-shadow: 
+        inset -7px -7px 14px rgba(0,0,0,0.3),
+        0 0 18px rgba(255,220,150,0.5);
     border-radius: 50%;
     position: absolute;
     top: 47%;
@@ -199,7 +228,11 @@ body {
 .uranus_planet {
     width: 40px;
     height: 40px;
-    background: blue;
+    background: radial-gradient(circle at 30% 30%, #a0f0ff 0%, transparent 50%), url("/textures/uranus.jpg");
+    background-size: cover;
+    box-shadow: 
+        inset -6px -6px 12px rgba(0,0,0,0.3),
+        0 0 16px rgba(150,220,255,0.5);
     border-radius: 50%;
     position: absolute;
     top: 47%;
@@ -225,7 +258,11 @@ body {
 .neptune_planet {
     width: 38px;
     height: 38px;
-    background: purple;
+    background: radial-gradient(circle at 30% 30%, #80c0ff 0%, transparent 50%), url("/textures/neptune.jpg");
+    background-size: cover;
+    box-shadow: 
+        inset -6px -6px 12px rgba(0,0,0,0.3),
+        0 0 16px rgba(80,120,255,0.6);
     border-radius: 50%;
     position: absolute;
     top: 48%;
