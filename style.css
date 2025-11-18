@@ -25,7 +25,7 @@ body {
     left: 50%;
     transform: translate(-50%,-50%);    
 }
-    
+
 .mercury_orbit {
     width: 150px;
     height: 150px;
@@ -43,14 +43,14 @@ body {
     top: 44%;
     left: 44%;
     transform: translate(-50%, -50%);
-    animation: mercuryOrbit 5s linear infinite;
+    animation: mercuryOrbit 2s linear infinite; /* 88/365 x 10 = 2.4s ROUND DOWN */
 }
 @keyframes mercuryOrbit {
     from{
-        transform: rotate(360deg) translateX(75px) rotate(-360deg);
+        transform: rotate(0deg) translateX(75px) rotate(0deg);
     }
     to{
-        transform: rotate(0deg) translateX(75px) rotate(0deg);
+        transform: rotate(360deg) translateX(75px) rotate(360deg);
     }
 }
 .mercury_orbit,
@@ -88,7 +88,7 @@ body {
     top: 43%;
     left: 43%;
     transform: translate(-50%,-50%);
-    animation: venusOrbit 8s linear infinite;
+    animation: venusOrbit 6s linear infinite; /* 225/365 x 10 = 6.16s ROUND DOWN */
 }
 
 @keyframes venusOrbit {
@@ -118,7 +118,7 @@ body {
     top: 44%;
     left: 44%;
     transform: translate(-50%-50%);
-    animation: earthOrbit 12s linear infinite;
+    animation: earthOrbit 10s linear infinite; /* we set earths orbit for 10 seconds */
 }
 
 @keyframes earthOrbit {
@@ -148,7 +148,7 @@ body {
     top: 47%;
     left: 47%;
     transform: translate(-50%-50%);
-    animation: marsOrbit 11s linear infinite;
+    animation: marsOrbit 19s linear infinite; /* 687/365 x 10 = 18.8s ROUND UP */
 }
 
 @keyframes marsOrbit {
@@ -178,7 +178,7 @@ body {
     top: 46%;
     left: 46%;
     transform: translate(-50%-50%);
-    animation: jupiterOrbit 6s linear infinite;    
+    animation: jupiterOrbit 119s linear infinite;  /* 4333/365 x 10 = 118.7 ROUND UP */  
 }
 
 @keyframes jupiterOrbit {
@@ -208,7 +208,7 @@ body {
     top: 47%;
     left: 47%;
     transform: translate(-50%-50%);
-    animation: saturnOrbit 13s linear infinite;
+    animation: saturnOrbit 295s linear infinite; /* 10759/365 x 10 = 294.7s ROUND UP */
 }
 
 @keyframes saturnOrbit {
@@ -238,7 +238,7 @@ body {
     top: 47%;
     left: 47%;
     transform: translate(-50%-50%);
-    animation: uranusOrbit  17s linear infinite;
+    animation: uranusOrbit  841s linear infinite; /* 30687/365 x 10 = 840.7s ROUND UP */
 }
 
 @keyframes uranusOrbit {
@@ -268,7 +268,7 @@ body {
     top: 48%;
     left: 48%;
     transform: translate(-50%-50%);
-    animation: neptuneOrbit 17s linear infinite;
+    animation: neptuneOrbit 1649s linear infinite; /* 60190/365 x 10 = 1649s */
 }
 
 @keyframes neptuneOrbit {
