@@ -14,11 +14,11 @@ body {
     background-size: cover;
     background-blend-mode: overlay;
     box-shadow: 
-        inset -10px -10px 20px rgba(0,0,0,0.3),   /* inner crater-like shading */
-        0 0 10px #ffeb3b,                        /* soft corona */
-        0 0 50px #ff9800,                        /* mid glow */
-        0 0 90px #ff5722,                       /* outer flare */
-        0 0 130px rgba(255, 100, 0, 0.6);        /* diffuse light */
+        inset -10px -10px 20px rgba(0,0,0,0.3),   
+        0 0 10px #ffeb3b,                        
+        0 0 50px #ff9800,                        
+        0 0 90px #ff5722,                       
+        0 0 130px rgba(255, 100, 0, 0.6);        
     border-radius: 50%;
     position:absolute;
     top: 50%;
